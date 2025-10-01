@@ -9,7 +9,8 @@
       rel="stylesheet"
     />
     <link href="../css/index.css" rel="stylesheet" />
-    <link href="../css/experience.css" rel="stylesheet" />
+    <link href="../components/sidebar/sidebar.css" rel="stylesheet">
+    <link href="../components/card.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Sidebar -->
@@ -21,29 +22,41 @@
       <div class="row g-4">
         <!-- Experience 1 -->
         <div class="col-md-6 col-lg-4">
-          <div class="exp-card p-4">
+          <div class="card-custom p-4 bg-dark">
             <h4 class="text-light">Internship at XYZ Company</h4>
             <p class="text-secondary">
-              Worked as a software engineering intern where I contributed to web application development,
-              debugging, and collaborated in an agile environment.
+              Worked as a software engineering intern where I contributed to web
+              application development, debugging, and collaborated in an agile
+              environment.
             </p>
           </div>
         </div>
         <!-- Experience 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="exp-card p-4">
+          <div class="card-custom p-4 bg-dark">
             <h4 class="text-light">Project Management</h4>
             <p class="text-secondary">
-              Led a research project on Natural Language Processing (NLP), focusing on augmenting the spaCy NLP pipeline to interpret mathematical equations and expressions. The project resulted in the development of Talkboard, a virtual whiteboard capable of processing vocal mathematical instructions and presenting them as equations or expressions with step-by-step visualizations.
+              Led a research project on Natural Language Processing (NLP),
+              focusing on augmenting the spaCy NLP pipeline to interpret
+              mathematical equations and expressions. The project resulted in
+              the development of Talkboard, a virtual whiteboard capable of
+              processing vocal mathematical instructions and presenting them as
+              equations or expressions with step-by-step visualizations.
             </p>
           </div>
         </div>
         <!-- Experience 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="exp-card p-4">
+          <div class="card-custom p-4 bg-dark">
             <h4 class="text-light">Student Leader</h4>
             <p class="text-secondary">
-              Served as the Deputy Secretary of the FEU Tech Junior Philippine Computer Society (JPCS) for one term, where I was responsible for preparing and managing commitment letters for partner organizations, as well as maintaining organizational files such as schedules, correspondence, and official documents. In this role, I also assisted in facilitating meetings, coordinating events, and supporting the smooth execution of organizational activities.
+              Served as the Deputy Secretary of the FEU Tech Junior Philippine
+              Computer Society (JPCS) for one term, where I was responsible for
+              preparing and managing commitment letters for partner
+              organizations, as well as maintaining organizational files such as
+              schedules, correspondence, and official documents. In this role, I
+              also assisted in facilitating meetings, coordinating events, and
+              supporting the smooth execution of organizational activities.
             </p>
           </div>
         </div>
@@ -57,7 +70,7 @@
 
     <!-- Load Sidebar -->
     <script>
-      fetch("../components/sidebar.html")
+      fetch("../components/sidebar/sidebar.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("sidebar-container").innerHTML = data;

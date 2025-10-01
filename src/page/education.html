@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link href="../css/index.css" rel="stylesheet" />
+    <link href="../components/sidebar/sidebar.css" rel="stylesheet">
+    <link href="../components/card.css" rel="stylesheet" />
     <link href="../css/education.css" rel="stylesheet" />
   </head>
   <body>
@@ -21,7 +23,7 @@
       <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4">
-          <div class="edu-card p-4 text-center">
+          <div class="card-custom p-4 bg-dark text-center">
             <img
               src="../imgs/tech.png"
               alt="FEU Tech Logo"
@@ -40,7 +42,7 @@
         </div>
         <!-- Card 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="edu-card p-4 text-center">
+          <div class="card-custom p-4 bg-dark text-center">
             <img src="../imgs/rtu.png" alt="RTU Logo" class="edu-logo mb-3" />
             <h4 class="text-light">Rizal Technological University</h4>
             <p class="text-secondary mb-1">Senior High School</p>
@@ -49,7 +51,7 @@
         </div>
         <!-- Card 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="edu-card p-4 text-center">
+          <div class="card-custom p-4 bg-dark text-center">
             <img src="../imgs/rtu.png" alt="RTU Logo" class="edu-logo mb-3" />
             <h4 class="text-light">Rizal Technological University</h4>
             <p class="text-secondary">Laboratory High School</p>
@@ -57,11 +59,17 @@
           </div>
         </div>
 
-         <!-- Card 4 -->
+        <!-- Card 4 -->
         <div class="col-md-6 col-lg-4">
-          <div class="edu-card p-4 text-center">
-            <img src="../imgs/dsmhs.png" alt="DSMHS Logo" class="edu-logo mb-3" />
-            <h4 class="text-light">Divine Shepherd Montesorri and Highschool</h4>
+          <div class="card-custom p-4 bg-dark text-center">
+            <img
+              src="../imgs/dsmhs.png"
+              alt="DSMHS Logo"
+              class="edu-logo mb-3"
+            />
+            <h4 class="text-light">
+              Divine Shepherd Montesorri and Highschool
+            </h4>
             <p class="text-secondary">Grade School</p>
             <p class="text-secondary">(Perp – Grade6 )</p>
           </div>
@@ -75,7 +83,7 @@
 
     <!-- Load Sidebar -->
     <script>
-      fetch("../components/sidebar.html")
+      fetch("../components/sidebar/sidebar.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("sidebar-container").innerHTML = data;

@@ -9,8 +9,8 @@
       rel="stylesheet"
     />
     <link href="../css/index.css" rel="stylesheet" />
-    <link href="../css/education.css" rel="stylesheet" />
-    <link href="../css/skills.css" rel="stylesheet" />
+    <link href="../components/sidebar/sidebar.css" rel="stylesheet">
+    <link href="../components/card.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Sidebar -->
@@ -24,7 +24,7 @@
       <div class="row">
         <!-- Card Example -->
         <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light shadow">
+          <div class="card-custom bg-dark text-light shadow">
             <div class="card-body">
               <h5 class="card-title">Programming Languages</h5>
               <p class="card-text">
@@ -35,7 +35,7 @@
         </div>
 
         <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light shadow">
+          <div class="card-custom bg-dark text-light shadow">
             <div class="card-body">
               <h5 class="card-title">Frameworks & Libraries</h5>
               <p class="card-text">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light shadow">
+          <div class="card-custom bg-dark text-light shadow">
             <div class="card-body">
               <h5 class="card-title">Productivity Tools</h5>
               <p class="card-text">Photoshop, MS Office Tools</p>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light shadow">
+          <div class="card-custom bg-dark text-light shadow">
             <div class="card-body">
               <h5 class="card-title">Version Control</h5>
               <p class="card-text">Git</p>
@@ -64,7 +64,7 @@
         </div>
 
         <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light shadow">
+          <div class="card-custom bg-dark text-light shadow">
             <div class="card-body">
               <h5 class="card-title">Project Management</h5>
               <p class="card-text">Microsoft Azure</p>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light shadow">
+          <div class="card-custom bg-dark text-light shadow">
             <div class="card-body">
               <h5 class="card-title">Soft Skills</h5>
               <p class="card-text">Communication, Teamwork, Problem-Solving</p>
@@ -90,7 +90,7 @@
 
     <!-- Load Sidebar -->
     <script>
-      fetch("../components/sidebar.html")
+      fetch("../components/sidebar/sidebar.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("sidebar-container").innerHTML = data;

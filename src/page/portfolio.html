@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="../css/index.css" rel="stylesheet" />
+    <link href="../components/sidebar/sidebar.css" rel="stylesheet">
     <link href="../css/education.css" rel="stylesheet" />
   </head>
   <body>
@@ -26,7 +27,7 @@
 
     <!-- Load Sidebar -->
     <script>
-      fetch("../components/sidebar.html")
+      fetch("../components/sidebar/sidebar.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("sidebar-container").innerHTML = data;

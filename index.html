@@ -7,7 +7,7 @@
       name="description"
       content="Portfolio of Ralph Clarence C. Bello, Computer Science student specializing in Software Engineering."
     />
-    <title>Portfolio</title>
+    <title>Professional Website</title>
 
     <!-- Bootstrap -->
     <link
@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
     <link href="./src/css/index.css" rel="stylesheet" />
+    <link href="./src/components/animations.css" rel="stylesheet" />
+    <link href="./src/components/sidebar/sidebar.css" rel="stylesheet">
   </head>
   <body>
     <!-- Sidebar -->
@@ -23,17 +25,15 @@
     <!-- Main Content -->
     <main class="content">
       <!-- Hero Section -->
-      <header class="hero">
+      <header class="hero bg-dark">
         <h1 class="text-light">Hello! I am Ralph.</h1>
-        <p class="lead text-secondary">
-          Aspiring to contribute to a better future, one line of code at a time.
-        </p>
+        <p class="lead text-secondary typewriter"> Aspiring to contribute to a better future, one line of code at a time.</p>
       </header>
 
       <!-- Bio Section -->
-      <section class="card-section">
+      <section class="card-section bg-dark">
         <div class="row align-items-center">
-          <div class="col-md-8">
+          <div class="col-md-8 ">
             <h2 class="text-light">About Me</h2>
             <p class="text-secondary">
               I'm Ralph Clarence C. Bello, a fourth-year Computer Science
@@ -72,7 +72,7 @@
 
     <!-- Load Sidebar -->
     <script>
-      fetch("src/components/sidebar.html")
+      fetch("src/components/sidebar/sidebar.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("sidebar-container").innerHTML = data;
