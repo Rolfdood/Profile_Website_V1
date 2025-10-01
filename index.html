@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Ralph Clarence C. Bello, Computer Science student specializing in Software Engineering."
+    />
+    <title>Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./src/css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Hero Section -->
+      <header class="hero">
+        <h1 class="text-light">Hello! I am Ralph.</h1>
+        <p class="lead text-secondary">
+          Aspiring to contribute to a better future, one line of code at a time.
+        </p>
+      </header>
+
+      <!-- Bio Section -->
+      <section class="card-section">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 class="text-light">About Me</h2>
+            <p class="text-secondary">
+              I'm Ralph Clarence C. Bello, a fourth-year Computer Science
+              student at Far Eastern University Institute of Technology,
+              specializing in Software Engineering. I am a goal-oriented and
+              highly proactive individual who not only reacts to challenges but
+              also anticipates them. I have solid experience leading and
+              managing projects and thrive on collaborating with diverse teams.
+              I approach every task with diligence and focused effort, which has
+              allowed me to excel in time management and consistently deliver
+              high-quality work. I am an outgoing and friendly team player who
+              enjoys motivating those around me and fostering a positive work
+              environment. My skills are rounded out by a strong capacity for
+              active listening and clear communication. I am now actively
+              seeking opportunities in the IT sector where I can leverage my
+              skills and expertise to deliver innovative solutions and drive
+              meaningful technological advancements to our society.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="src/imgs/profile.JPG"
+              alt="Ralph Clarence C. Bello"
+              class="profile-img img-fluid shadow"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer text-center">
+        <p>&copy; 2025 Ralph Clarence C. Bello. All rights reserved.</p>
+      </footer>
+    </main>
+
+
+    <!-- Load Sidebar -->
+    <script>
+      fetch("src/components/sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar-container").innerHTML = data;
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

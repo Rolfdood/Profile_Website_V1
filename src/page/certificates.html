@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/certificates.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="sidebar-container"></div>
+    <main class="content">
+      <h2 class="text-light mb-4">Certificates</h2>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card bg-dark text-light shadow h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <img src="../imgs/ccna-introduction-to-networks.png" alt="Cisco Badge" width="100" height="100" class="me-3">
+                <h5 class="card-title mb-0">CCNA: Introduction to Networks</h5>
+              </div>
+              <h6 class="text-secondary">Cisco</h6>
+              <p class="card-text">
+                Shows that I completed the Introduction to Networks course, gaining knowledge of networking concepts such as IP addressing, Ethernet protocols, and configuring connectivity between switches, routers, and devices. Completed up to 54 labs and 14 hours of hands-on practice using Cisco hardware or Packet Tracer.
+              </p>
+              <a href="https://www.credly.com/badges/e032bed7-a203-429d-9639-10acb5c9c2ac/public_url" target="_blank" class="btn btn-outline-light mt-auto">
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card bg-dark text-light shadow h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <img src="../imgs/it-specialist-python.png" alt="freeCodeCamp Badge" width="100" height="100" class="me-3">
+                <h5 class="card-title mb-0">IT Specialist - Python</h5>
+              </div>
+              <h6 class="text-secondary">Certiport</h6>
+              <p class="card-text">
+               This badge demonstrate that I can recognize, write, and debug Python code that will logically solve a problem.
+              </p>
+              <a href="https://www.credly.com/badges/ca4394ee-6a65-40e8-b56b-a9a677804c6f/public_url" target="_blank" class="btn btn-outline-light mt-auto">
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card bg-dark text-light shadow h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <img src="../imgs/pmi-project-management-ready.png" alt="Cisco Badge" width="100" height="100" class="me-3">
+                <h5 class="card-title mb-0">PMI Project Management Ready</h5>
+              </div>
+              <h6 class="text-secondary">Project Management Institute</h6>
+              <p class="card-text">
+                 This badge indicates that I have an understanding of the concepts within the growing field of project management, and the tools to apply this knowledge to a wide range of opportunities.
+              </p>
+              <a href="https://www.credly.com/badges/f5db7e02-bb7d-4934-8df0-99f7c70ec358/public_url" target="_blank" class="btn btn-outline-light mt-auto">
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card bg-dark text-light shadow h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <img src="../imgs/c-essentials-1.png" alt="freeCodeCamp Badge" width="100" height="100" class="me-3">
+                <h5 class="card-title mb-0">C++ Essentials 1</h5>
+              </div>
+              <h6 class="text-secondary">Cisco</h6>
+              <p class="card-text">
+                Shows that the holder understands C++ syntax and concepts, including data types, control flow, arrays, pointers, memory management, structures, basic programming techniques, and essential standard library functions.
+              </p>
+              <a href="https://www.credly.com/badges/829e75d2-4202-4f6f-b69f-5f04281bc47c/public_url" target="_blank" class="btn btn-outline-light mt-auto">
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card bg-dark text-light shadow h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <img src="../imgs/javascript-essentials-1.png" alt="freeCodeCamp Badge" width="100" height="100" class="me-3">
+                <h5 class="card-title mb-0">JavaScript Essentials 1</h5>
+              </div>
+              <h6 class="text-secondary">Cisco</h6>
+              <p class="card-text">
+                Shows that the holder understands core JavaScript syntax, variables, operators, control flow, functions, and basic data types; can think algorithmically, analyze problems, and design, develop, and improve simple JavaScript programs.
+              </p>
+              <a href="https://www.credly.com/badges/c2480d49-975e-4ec6-8dd8-506c335db603/public_url" target="_blank" class="btn btn-outline-light mt-auto">
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer text-center mt-4">
+        <p>&copy; 2025 Ralph Clarence C. Bello. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <!-- Load Sidebar -->
+    <script>
+      fetch("../components/sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar-container").innerHTML = data;
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

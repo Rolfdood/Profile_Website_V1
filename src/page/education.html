@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/education.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h2 class="text-light mb-4">Education</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card p-4 text-center">
+            <img
+              src="../imgs/tech.png"
+              alt="FEU Tech Logo"
+              class="edu-logo mb-3"
+            />
+            <h4 class="text-light">
+              Far Eastern University Institute of Technology
+            </h4>
+            <p class="text-secondary mb-1">
+              Bachelor of Science in Computer Science
+            </p>
+            <p class="text-secondary small">
+              with Specialization in Software Engineering
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card p-4 text-center">
+            <img src="../imgs/rtu.png" alt="RTU Logo" class="edu-logo mb-3" />
+            <h4 class="text-light">Rizal Technological University</h4>
+            <p class="text-secondary mb-1">Senior High School</p>
+            <p class="text-secondary mb-1">TVL-ICT</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card p-4 text-center">
+            <img src="../imgs/rtu.png" alt="RTU Logo" class="edu-logo mb-3" />
+            <h4 class="text-light">Rizal Technological University</h4>
+            <p class="text-secondary">Laboratory High School</p>
+            <p class="text-secondary">(Grade 7 – Grade 10)</p>
+          </div>
+        </div>
+
+         <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card p-4 text-center">
+            <img src="../imgs/dsmhs.png" alt="DSMHS Logo" class="edu-logo mb-3" />
+            <h4 class="text-light">Divine Shepherd Montesorri and Highschool</h4>
+            <p class="text-secondary">Grade School</p>
+            <p class="text-secondary">(Perp – Grade6 )</p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer text-center">
+        <p>&copy; 2025 Ralph Clarence C. Bello. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <!-- Load Sidebar -->
+    <script>
+      fetch("../components/sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar-container").innerHTML = data;
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

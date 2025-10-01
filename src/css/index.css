@@ -1,0 +1,146 @@
+/* Layout */
+body {
+  margin: 0;
+  background-color: #1c1f24;
+  color: #e4e6eb;
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #adb5bd;
+  font-size: 14px;
+  background-color: transparent; /* keeps it minimalist */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #212529;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  height: auto;
+  min-height: 95vh;
+  overflow-y: auto;
+}
+
+
+.sidebar img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ced4da;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #0d6efd;
+  font-weight: bold;
+  transform: translateX(4px);
+}
+
+/* Content */
+.content {
+  margin-left: 290px;
+  padding: 40px;
+  max-width: 1200px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2c3036;
+  padding: 60px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Reusable Card Section */
+.card-section {
+  background-color: #2c3036;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Profile Image */
+.profile-img {
+  max-width: 220px;
+  border-radius: 12px; /* softer rectangle corners */
+  border: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* subtle lifted effect */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: calc(100% - 40px);
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
