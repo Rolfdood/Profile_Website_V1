@@ -16,7 +16,7 @@ body {
   text-align: center;
   color: #adb5bd;
   font-size: 14px;
-  background-color: transparent; /* keeps it minimalist */
+  background-color: transparent;
 }
 
 /* Content */
@@ -72,9 +72,9 @@ h3 {
 /* Profile Image */
 .profile-img {
   max-width: 220px;
-  border-radius: 12px; /* softer rectangle corners */
+  border-radius: 12px;
   border: none;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* subtle lifted effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 
   /* Fade-in animation */
   opacity: 0;
