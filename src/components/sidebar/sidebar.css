@@ -13,29 +13,29 @@
   overflow-y: auto;
 
   display: flex;
-  flex-direction: column; /* stack logo + links */
-  align-items: center;    /* center horizontally */
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Logo */
 .sidebar img {
   width: 150px;
   height: auto;
-  margin-bottom: 30px; /* extra space below the logo */
+  margin-bottom: 30px;
 }
 
 /* Links */
 .sidebar a {
   display: block;
   width: 100%;
-  text-align: center; /* keep links centered under the logo */
+  text-align: center;
   color: #ced4da;
-  padding: 14px 0; /* slightly taller click area */
+  padding: 14px 0;
   margin-bottom: 10px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
-  font-size: 1.3rem; /* enlarged from 1.1rem */
-  font-weight: 500;  /* medium weight for stronger look */
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .sidebar a:hover,
