@@ -16,6 +16,7 @@
 
 .card-text {
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 .btn-outline-light {

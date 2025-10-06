@@ -69,6 +69,14 @@ h3 {
   font-size: 1.5rem;
 }
 
+.justify{
+  text-align: justify;
+}
+
+.italic {
+  font-style: italic;
+}
+
 /* Profile Image */
 .profile-img {
   max-width: 220px;
