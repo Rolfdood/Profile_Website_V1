@@ -12,13 +12,20 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link href="./src/css/index.css" rel="stylesheet" />
     <link href="./src/components/animations.css" rel="stylesheet" />
     <link href="./src/components/sidebar/sidebar.css" rel="stylesheet" />
   </head>
+
   <body>
     <div id="sidebar-container"></div>
+
     <main class="content">
+      <!-- Hero -->
       <header class="hero bg-dark">
         <h1 class="text-light">Hello! I am Ralph.</h1>
         <p class="lead text-secondary typewriter">
@@ -26,6 +33,7 @@
         </p>
       </header>
 
+      <!-- About -->
       <section class="card-section bg-dark">
         <div class="row align-items-center">
           <div class="col-md-8">
@@ -58,7 +66,41 @@
         </div>
       </section>
 
-      <footer class="footer text-center">
+      <!-- Contact Section -->
+      <section class="contact-section text-center bg-dark py-5 card-section">
+        <h2 class="text-light mb-4">Contact Me</h2>
+        <p class="text-secondary mb-4">
+          Feel free to reach out to me through any of the platforms below:
+        </p>
+
+        <div class="d-flex justify-content-center flex-wrap gap-4">
+          <a href="mailto:ralphcbello@gmail.com" class="text-light fs-4"
+            ><i class="bi bi-envelope-fill me-2"></i
+            >ralphclarencebello@gmail.com</a
+          >
+          <a
+            href="www.linkedin.com/in/ralph-bello"
+            target="_blank"
+            class="text-light fs-4"
+            ><i class="bi bi-linkedin me-2"></i>Ralph Bello</a
+          >
+          <a
+            href="https://github.com/Rolfdood"
+            target="_blank"
+            class="text-light fs-4"
+            ><i class="bi bi-github me-2"></i>Rolfdood</a
+          >
+          <a
+            href="https://www.facebook.com/ralphDowgi"
+            target="_blank"
+            class="text-light fs-4"
+            ><i class="bi bi-facebook me-2"></i>Ralph Clarence</a
+          >
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer text-center mt-4">
         <p>&copy; 2025 Ralph Clarence C. Bello. All rights reserved.</p>
       </footer>
     </main>
