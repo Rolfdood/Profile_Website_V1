@@ -1,17 +1,21 @@
-/* Sidebar */
+/* Sidebar - Initial (Desktop/Tablet) Styles */
 .sidebar {
+  /* Dimensions & Layout */
   width: 250px;
-  background-color: #212529;
-  color: #fff;
-  padding: 20px;
+  min-height: 95vh; /* Keep this for desktop */
   position: fixed;
   top: 20px;
   left: 20px;
+  overflow-y: auto; /* Good for long content */
+
+  /* Appearance */
+  background-color: #212529;
+  color: #fff;
+  padding: 20px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
-  min-height: 95vh;
-  overflow-y: auto;
 
+  /* Flex for content alignment */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,14 +45,53 @@
 .sidebar a:hover,
 .sidebar a.active {
   color: #0d6efd;
-  font-weight: 600;
+  font-weight: bold;
   transform: translateX(4px);
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    /* Position change */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: unset;
+    height: auto;
+    padding: 10px;
+    z-index: 1000;
+    
+    /* Layout change */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
 
-.sidebar a:hover,
-.sidebar a.active {
-  color: #0d6efd;
-  font-weight: bold;
-  transform: translateX(4px);
+    /* Appearance change */
+    border-radius: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Logo adjustment for the top bar */
+  .sidebar img {
+    width: 40px;
+    margin-bottom: 0;
+  }
+
+  /* Links adjustment for the top bar */
+  .sidebar a {
+    width: auto;
+    text-align: center;
+    padding: 10px 8px;
+    margin-bottom: 0;
+    font-size: 0.9rem; 
+    flex-grow: 1;
+  }
+
+  /* Remove the transform on hover for horizontal layout */
+  .sidebar a:hover,
+  .sidebar a.active {
+    transform: none; 
+  }
 }

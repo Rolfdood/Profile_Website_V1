@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: #1c1f24;
   color: #e4e6eb;
-  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   display: flex;
@@ -69,7 +69,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-.justify{
+.justify {
   text-align: justify;
 }
 
@@ -98,25 +98,36 @@ h3 {
   }
 }
 
-
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .sidebar {
-    width: calc(100% - 40px);
-    height: auto;
-    position: relative;
-    margin: 20px auto;
-  }
-
+  /* Content */
   .content {
     margin-left: 0;
+    margin-right: 0;
     width: 100%;
     padding: 20px;
+    padding-top: 80px;
+    max-width: 100%;
   }
 
+  /* Footer */
+  .footer {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  /* Typography Scaling */
   body {
     font-size: 16px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .card-section {
+    padding: 20px;
   }
 
   .hero h1 {
@@ -125,5 +136,21 @@ h3 {
 
   .hero p {
     font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .profile-img {
+    max-width: 150px;
   }
 }
